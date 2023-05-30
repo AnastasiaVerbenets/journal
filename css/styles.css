@@ -30,11 +30,16 @@ img {
     max-width: 100%;
 }
 
-.container {
+/* .container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 147px;
     padding-right: 147px;
+} */
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Меню навігації */
@@ -59,7 +64,7 @@ img {
     color: #03a9f4;
 }
 
-/* Секція main */
+/* section main */
 
 .main-list {
     display: flex;
@@ -99,7 +104,7 @@ img {
     width: 420px;
 }
 
-/* Секція button */
+/* section button */
 
 .button {
     width: 165px;
@@ -107,9 +112,28 @@ img {
     border: 1px solid #626262;
     margin-top: 94px;
     margin-bottom: 66px;
+    cursor: pointer;
 }
 
 .btn {
     display: flex;
     justify-content: center;
+}
+
+/* mobile adaptive */
+
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+    
+    .menu-button {
+        background-color: transparent;
+        border: none;
+        padding: 16px;
+    }
+
+    .menu-icon {
+        fill: #626262;
+    }
 }
