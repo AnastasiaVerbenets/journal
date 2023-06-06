@@ -15,11 +15,12 @@
     <!-- Секція header -->
     <header>
     <div class="container">
-        <button class="menu-button" type="button">
+        <button class="menu-button" type="button" data-menu-button>
             <svg class="menu-icon" height="40" width="40">
                 <use href="./img/svg/symbol-defs.svg#icon-menu-button"></use>
             </svg>
         </button>
+
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-list-item"><a class="nav-list-link" href="">LIFESTYLE</a></li>
@@ -28,6 +29,23 @@
                 <li class="nav-list-item"><a class="nav-list-link" href="">TRAVEL</a></li>
             </ul>
         </nav>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile-menu" data-menu>
+        <div class="container">
+            <button class="menu-button-close" type="button" data-menu-close>
+                <svg class="menu-icon" height="40" width="40">
+                    <use href="./img/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-nav-list">
+                <li class="nav-list-item"><a class="nav-list-link" href="">LIFESTYLE</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">PHOTODIARY</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">MUSIC</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">TRAVEL</a></li>
+            </ul>
+        </div>
     </div>
     </header>
     <!-- Секція main  -->
@@ -76,5 +94,6 @@
             <button class="button" type="button">Load more</button>
         </div>
     </main>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
